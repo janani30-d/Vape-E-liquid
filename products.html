@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VAPOR | Vape & E-Liquid Store</title>
+    <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo-light.png">
+
+
+    <!-- GOOGLE FONT: INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         HEADER START
+    =========================================== -->
+
+    <header class="vapor-header" id="vaporHeader">
+
+        <div class="vapor-header-container">
+
+
+            <!-- LOGO -->
+            <a href="index.html" class="vapor-logo">
+
+                <img src="images/logo-light.png"
+                     class="vapor-logo-light"
+                     alt="VAPOR Logo">
+
+                <img src="images/logo.png"
+                     class="vapor-logo-dark"
+                     alt="VAPOR Logo">
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+            <nav class="vapor-navigation" id="vaporNavigation">
+
+
+                <!-- NAVIGATION MENUS -->
+                <ul class="vapor-nav-list">
+
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="vapor-nav-item vapor-home-dropdown">
+
+                        <a href="#"
+                           class="vapor-nav-link vapor-home-trigger"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+
+                            Home
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </a>
+
+
+                        <!-- HOME SUBMENU -->
+                        <ul class="vapor-dropdown-menu">
+
+                            <li>
+                                <a href="index.html">
+                                    Home 1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">
+                                    Home 2
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <!-- ABOUT US -->
+                    <li class="vapor-nav-item">
+
+                        <a href="about.html"
+                           class="vapor-nav-link">
+
+                            About Us
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- PRODUCTS -->
+                    <li class="vapor-nav-item">
+
+                        <a href="products.html"
+                           class="vapor-nav-link active">
+
+                            Products
+
+                        </a>
+
+                    </li>
+
+
+                    
+
+
+                    <!-- AGE VERIFICATION -->
+                    <li class="vapor-nav-item">
+
+                        <a href="age-verification.html"
+                           class="vapor-nav-link">
+
+                            Age Verification
+
+                        </a>
+
+                    </li>
+
+
+                    
+
+
+                    <!-- CONTACT -->
+                    <li class="vapor-nav-item">
+
+                        <a href="contact.html"
+                           class="vapor-nav-link">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+
+                <!-- ==================================
+                     HEADER ACTIONS
+                     INSIDE NAVIGATION
+                =================================== -->
+
+                <div class="vapor-header-actions">
+
+
+                    <!-- RTL BUTTON -->
+                    <button class="vapor-header-icon"
+                            type="button"
+                            id="vaporRtlToggle"
+                            aria-label="Toggle RTL"
+                            title="Toggle RTL">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+
+                    <!-- DARK MODE BUTTON -->
+                    <button class="vapor-header-icon"
+                            type="button"
+                            id="vaporThemeToggle"
+                            aria-label="Toggle dark mode"
+                            title="Toggle Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- LOGIN BUTTON -->
+                    <a href="login.html"
+                       class="vapor-login-btn">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <span>Login</span>
+
+                    </a>
+
+
+                </div>
+
+
+            </nav>
+
+
+            <!-- ==================================
+                 HAMBURGER BUTTON
+            =================================== -->
+
+            <button class="vapor-menu-toggle"
+                    type="button"
+                    id="vaporMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="vaporNavigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+        </div>
+
+    </header>
+    <!-- ==========================================
+         HEADER END
+    =========================================== -->
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+<!-- ==========================================
+     SECTION 01 : PRODUCT HERO
+=========================================== -->
+
+<section class="vapor-product-hero" id="vaporProductHero">
+
+    <div class="vapor-product-hero-overlay"></div>
+
+    <div class="vapor-product-hero-container">
+
+        <!-- HERO CONTENT -->
+        <div class="vapor-product-hero-content">
+
+            <span class="vapor-product-hero-eyebrow">
+                PRODUCT INFORMATION
+            </span>
+
+            <h1 class="vapor-product-hero-title">
+                Understanding
+                <span>Products & Components</span>
+            </h1>
+
+            <p class="vapor-product-hero-description">
+                Explore educational information about electronic
+                cigarette components, technical terminology,
+                health considerations, and applicable regulations.
+            </p>
+
+            <a href="#vaporProductCategories"
+               class="vapor-product-hero-btn">
+
+                Explore Information
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+        </div>
+
+        <!-- BREADCRUMB -->
+        <div class="vapor-product-hero-breadcrumb">
+
+            <a href="index.html">Home</a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span>Products</span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     PRODUCT CATEGORIES OVERVIEW
+====================================================== -->
+
+<section class="vapor-product-categories" id="vaporProductCategories">
+
+    <div class="vapor-product-categories-container">
+
+        <!-- SECTION HEADER -->
+        <div class="vapor-product-categories-header">
+
+            <span class="vapor-product-categories-eyebrow">
+                INFORMATION CATEGORIES
+            </span>
+
+            <h2 class="vapor-product-categories-title">
+                Explore Product
+                <span>Components</span>
+            </h2>
+
+            <p class="vapor-product-categories-description">
+                Learn about the technology, materials, and components
+                associated with electronic cigarette products through
+                clear and accessible educational information.
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORY CARDS -->
+        <div class="vapor-product-categories-grid">
+
+            <!-- CARD 01 -->
+            <div class="vapor-product-category-card">
+
+                <div class="vapor-product-category-image">
+
+                    <img src="images/device-components.jpg"
+                         alt="Illustration of electronic device components">
+
+                    <span class="vapor-product-category-number">
+                        01
+                    </span>
+
+                </div>
+
+                <div class="vapor-product-category-content">
+
+                    <span class="vapor-product-category-label">
+                        DEVICE INFORMATION
+                    </span>
+
+                    <h3>Devices</h3>
+
+                    <p>
+                        Understand the general components of electronic
+                        devices, including batteries, heating elements,
+                        and electronical circuits.
+                    </p>
+
+                    <a href="#vaporDeviceInformation"
+                       class="vapor-product-category-link">
+                        Read Information
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 02 -->
+            <div class="vapor-product-category-card">
+
+                <div class="vapor-product-category-image">
+
+                    <img src="images/liquid-components.jpg"
+                         alt="Scientific illustration of liquid ingredients">
+
+                    <span class="vapor-product-category-number">
+                        02
+                    </span>
+
+                </div>
+
+                <div class="vapor-product-category-content">
+
+                    <span class="vapor-product-category-label">
+                        INGREDIENT INFORMATION
+                    </span>
+
+                    <h3>E-liquids</h3>
+
+                    <p>
+                        Learn about commonly discussed ingredients,
+                        chemical terminology, and potential health
+                        considerations associated with e-liquids.
+                    </p>
+
+                    <a href="#vaporLiquidInformation"
+                       class="vapor-product-category-link">
+                        Read Information
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 03 -->
+            <div class="vapor-product-category-card">
+
+                <div class="vapor-product-category-image">
+
+                    <img src="images/accessory-components.jpg"
+                         alt="Technical illustration of electronic accessories">
+
+                    <span class="vapor-product-category-number">
+                        03
+                    </span>
+
+                </div>
+
+                <div class="vapor-product-category-content">
+
+                    <span class="vapor-product-category-label">
+                        COMPONENT INFORMATION
+                    </span>
+
+                    <h3>Accessories</h3>
+
+                    <p>
+                        Explore general information about associated
+                        components, their technical purpose, and
+                        relevant safety considerations.
+                    </p>
+
+                    <a href="#vaporAccessoryInformation"
+                       class="vapor-product-category-link">
+                        Read Information
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     DEVICES INFORMATION SECTION
+====================================================== -->
+
+<section class="vapor-device-information" id="vaporDeviceInformation">
+
+    <div class="vapor-device-information-container">
+
+        <!-- SECTION HEADER -->
+        <div class="vapor-device-information-header">
+
+            <span class="vapor-device-information-eyebrow">
+                DEVICE TECHNOLOGY
+            </span>
+
+            <h2 class="vapor-device-information-title">
+                Understanding
+                <span>Device Components</span>
+            </h2>
+
+            <p class="vapor-device-information-description">
+                Explore the general electronic and mechanical components
+                found in electronic cigarette devices. Understand their
+                technical functions and the safety considerations
+                associated with electronic systems.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="vapor-device-information-main">
+
+            <!-- IMAGE -->
+            <div class="vapor-device-information-image">
+
+                <img src="images/device-technology.jpg"
+                     alt="Educational technical illustration of electronic components">
+
+                <div class="vapor-device-information-image-label">
+                    <i class="fa-solid fa-microchip"></i>
+                    <span>Technical Overview</span>
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+            <div class="vapor-device-information-content">
+
+                <span class="vapor-device-information-subtitle">
+                    HOW ELECTRONIC SYSTEMS WORK
+                </span>
+
+                <h3>
+                    Exploring the Technology Behind Electronic Devices
+                </h3>
+
+                <p>
+                    Electronic devices contain interconnected electrical
+                    and mechanical components. Each component has a
+                    different technical purpose, from storing electrical
+                    energy to controlling electronic functions.
+                </p>
+
+                <p>
+                    Understanding these components helps explain basic
+                    electrical principles, device construction, and
+                    potential safety concerns.
+                </p>
+
+                <div class="vapor-device-information-note">
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <p>
+                        This content is provided for general educational
+                        awareness and does not provide instructions for
+                        assembling, modifying, or using electronic
+                        cigarette devices.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COMPONENT INFORMATION GRID -->
+        <div class="vapor-device-components-grid">
+
+            <!-- COMPONENT 01 -->
+            <div class="vapor-device-component-card">
+
+                <div class="vapor-device-component-icon">
+                    <i class="fa-solid fa-battery-full"></i>
+                </div>
+
+                <span class="vapor-device-component-number">01</span>
+
+                <h4>Battery and Power</h4>
+
+                <p>
+                    Learn about rechargeable battery technology,
+                    electrical energy storage, and battery
+                    safety risks.
+                </p>
+
+            </div>
+
+
+            <!-- COMPONENT 02 -->
+            <div class="vapor-device-component-card">
+
+                <div class="vapor-device-component-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <span class="vapor-device-component-number">02</span>
+
+                <h4>Electronic Circuitry</h4>
+
+                <p>
+                    Understand the basic role of electronic circuits
+                    in controlling and regulating electrical systems.
+                </p>
+
+            </div>
+
+
+            <!-- COMPONENT 03 -->
+            <div class="vapor-device-component-card">
+
+                <div class="vapor-device-component-icon">
+                    <i class="fa-solid fa-temperature-high"></i>
+                </div>
+
+                <span class="vapor-device-component-number">03</span>
+
+                <h4>Heating Elements</h4>
+
+                <p>
+                    Explore the general scientific principles of
+                    electrical resistance and heats generations.
+                </p>
+
+            </div>
+
+
+            <!-- COMPONENT 04 -->
+            <div class="vapor-device-component-card">
+
+                <div class="vapor-device-component-icon">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+
+                <span class="vapor-device-component-number">04</span>
+
+                <h4>Sensors and Controls</h4>
+
+                <p>
+                    Discover how sensors and electronic controls
+                    are used in monitoring and regulating systems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     E-LIQUID INFORMATION SECTION
+====================================================== -->
+
+<section class="vapor-liquid-section" id="vaporLiquidInformation">
+
+    <div class="vapor-liquid-container">
+
+        <!-- SECTION INTRO -->
+        <div class="vapor-liquid-intro">
+
+            <div class="vapor-liquid-intro-left">
+
+                <span class="vapor-liquid-eyebrow">
+                    INGREDIENT AWARENESS
+                </span>
+
+                <h2 class="vapor-liquid-title">
+                    What's Inside
+                    <span>E-liquids?</span>
+                </h2>
+
+            </div>
+
+            <div class="vapor-liquid-intro-right">
+
+                <p>
+                    Explore general information about the substances
+                    commonly discussed in electronic cigarette liquids,
+                    their chemical terminology, and associated
+                    health considerations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN EDITORIAL LAYOUT -->
+        <div class="vapor-liquid-main">
+
+            <!-- LEFT VISUAL -->
+            <div class="vapor-liquid-visual">
+
+                <img src="images/liquid-awareness.jpg"
+                     alt="Scientific laboratory illustration of liquid analysis">
+
+                <div class="vapor-liquid-visual-caption">
+
+                    <span class="vapor-liquid-caption-number">
+                        04
+                    </span>
+
+                    <div>
+                        <strong>Ingredient Awareness</strong>
+                        <p>Understanding chemical composition</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div class="vapor-liquid-content">
+
+                <span class="vapor-liquid-content-label">
+                    A CLOSER LOOK
+                </span>
+
+                <h3>
+                    Understanding Chemical Composition
+                </h3>
+
+                <p>
+                    E-liquids may contain several chemical substances.
+                    Their composition can vary, and the presence of
+                    particular ingredients does not establish that
+                    a product is safe.
+                </p>
+
+                <p>
+                    Understanding ingredient terminology is an
+                    important part of learning about potential
+                    exposure and health risks.
+                </p>
+
+
+                <!-- INGREDIENT TIMELINE -->
+                <div class="vapor-liquid-timeline">
+
+                    <!-- ITEM 01 -->
+                    <div class="vapor-liquid-timeline-item">
+
+                        <span class="vapor-liquid-timeline-dot"></span>
+
+                        <div>
+                            <span class="vapor-liquid-item-number">01</span>
+                            <h4>Nicotine</h4>
+                            <p>
+                                An addictive substance that can affect
+                                the nervous and cardiovascular systems.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ITEM 02 -->
+                    <div class="vapor-liquid-timeline-item">
+
+                        <span class="vapor-liquid-timeline-dot"></span>
+
+                        <div>
+                            <span class="vapor-liquid-item-number">02</span>
+                            <h4>Propylene Glycol (PG)</h4>
+                            <p>
+                                A chemical compound used in various
+                                industrial and consumer applications.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ITEM 03 -->
+                    <div class="vapor-liquid-timeline-item">
+
+                        <span class="vapor-liquid-timeline-dot"></span>
+
+                        <div>
+                            <span class="vapor-liquid-item-number">03</span>
+                            <h4>Vegetable Glycerin (VG)</h4>
+                            <p>
+                                A substance used in pharmaceutical,
+                                cosmetic, and other formulations.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ITEM 04 -->
+                    <div class="vapor-liquid-timeline-item">
+
+                        <span class="vapor-liquid-timeline-dot"></span>
+
+                        <div>
+                            <span class="vapor-liquid-item-number">04</span>
+                            <h4>Flavouring Chemicals</h4>
+                            <p>
+                                Chemical compounds used to create
+                                different flavour profiles. Inhalation
+                                safety cannot be assumed from food use.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HEALTH AWARENESS PANEL -->
+        <div class="vapor-liquid-awareness">
+
+            <div class="vapor-liquid-awareness-icon">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+
+            <div class="vapor-liquid-awareness-content">
+
+                <span>HEALTH & SAFETY AWARENESS</span>
+
+                <h3>Ingredient Information Does Not Mean Safety</h3>
+
+                <p>
+                    Nicotine exposure, chemical inhalation, and other
+                    potential health effects are important considerations.
+                    This information is educational only and does not
+                    recommend or promote the use of electronic cigarettes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =================================================
+     SECTION 05 - ACCESSORIES INFORMATION
+================================================== -->
+
+<section class="vapor-accessories-section" id="vaporAccessoryInformation">
+
+    <div class="vapor-accessories-container">
+
+        <!-- SECTION HEADER -->
+        <div class="vapor-accessories-header">
+
+            <span class="vapor-accessories-eyebrow">
+                COMPONENT AWARENESS
+            </span>
+
+            <h2 class="vapor-accessories-title">
+                Understanding
+                <span>Accessory Components</span>
+            </h2>
+
+            <p class="vapor-accessories-description">
+                Learn about common electronic and material components
+                associated with electronic cigarette devices, including
+                their general characteristics and potential safety concerns.
+            </p>
+
+        </div>
+
+
+        <!-- ACCESSORIES INFORMATION CARDS -->
+        <div class="vapor-accessories-grid">
+
+
+            <!-- CARD 01 - CHARGING COMPONENTS -->
+            <article class="vapor-accessory-panel">
+
+                <div class="vapor-accessory-image">
+
+                    <img src="images/charging-components.jpg"
+                         alt="Electronic charging components">
+
+                </div>
+
+                <div class="vapor-accessory-content">
+
+                    <div class="vapor-accessory-panel-top">
+
+                        <span class="vapor-accessory-number">
+                            01
+                        </span>
+
+                        <span class="vapor-accessory-icon">
+                            <i class="fa-solid fa-battery-half"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>Charging Components</h3>
+
+                    <p>
+                        Electronic charging components are associated
+                        with transferr electrical energy to recharge
+                        battery systems. Their condition and compatibility
+                        are electrical safety consider.
+                    </p>
+
+                    <div class="vapor-accessory-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>
+                            Damaged cables, connectors, or batteries can
+                            create electrical and overheating hazards.
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 02 - ELECTRICAL COMPONENTS -->
+            <article class="vapor-accessory-panel">
+
+                <div class="vapor-accessory-image">
+
+                    <img src="images/electrical-components.jpg"
+                         alt="Electronic circuit and electrical components">
+
+                </div>
+
+                <div class="vapor-accessory-content">
+
+                    <div class="vapor-accessory-panel-top">
+
+                        <span class="vapor-accessory-number">
+                            02
+                        </span>
+
+                        <span class="vapor-accessory-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>Electrical Components</h3>
+
+                    <p>
+                        Electronic systems may contain circuit boards,
+                        connectors, wiring, and protective components.
+                        These elements are part of the device's general
+                        electrical architecture.
+                    </p>
+
+                    <div class="vapor-accessory-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>
+                            Exposed wiring and damaged electronic parts
+                            may present electrical safety risks.
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 03 - MATERIAL COMPONENTS -->
+            <article class="vapor-accessory-panel">
+
+                <div class="vapor-accessory-image">
+
+                    <img src="images/material-components.jpg"
+                         alt="Close-up of electronic device materials">
+
+                </div>
+
+                <div class="vapor-accessory-content">
+
+                    <div class="vapor-accessory-panel-top">
+
+                        <span class="vapor-accessory-number">
+                            03
+                        </span>
+
+                        <span class="vapor-accessory-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </span>
+
+                    </div>
+
+                    <h3>Material Components</h3>
+
+                    <p>
+                        Electronic devices can contain metals, plastics,
+                        glass, insulating materials, and other manufactured
+                        components. Material quality and condition are
+                        relevant to general product safety.
+                    </p>
+
+                    <div class="vapor-accessory-note">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>
+                            Damaged or deteriorating materials may expose
+                            internal components or create additional hazards.
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- SAFETY INFORMATION -->
+        <div class="vapor-accessories-safety">
+
+            <div class="vapor-accessories-safety-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div class="vapor-accessories-safety-content">
+
+                <span>SAFETY AWARENESS</span>
+
+                <h3>Understand Electrical and Material Risks</h3>
+
+                <p>
+                    Electronic components and batteries can present
+                    electrical, overheating, fire, and disposal hazards.
+                    Damaged electronic equipment should not be handled
+                    or modified. Follow applicable safety and disposal
+                    regulations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="vapor-safety-cards" id="vaporSafetyCompliance">
+    
+<div class="vapor-safety-header">
+
+    <span class="vapor-safety-header-eyebrow">
+        SAFETY & RESPONSIBILITY
+    </span>
+
+    <h2 class="vapor-safety-header-title">
+        Awareness Starts With
+        <span>Understanding</span>
+    </h2>
+
+    <p class="vapor-safety-header-description">
+        Learn about legal restrictions, potential health concerns,
+        and environmental responsibilities through essential
+        safety and compliance information.
+    </p>
+
+</div>
+
+
+    <div class="vapor-safety-cards-container">
+
+        <!-- CARD 01 -->
+        <div class="vapor-safety-row">
+
+            <div class="vapor-safety-image">
+                <img src="images/legal-awareness.jpg"
+                     alt="Legal awareness">
+            </div>
+
+            <div class="vapor-safety-content">
+
+                <span class="vapor-safety-number">01</span>
+
+                <span class="vapor-safety-eyebrow">
+                    LEGAL AWARENESS
+                </span>
+
+                <h3>Understanding the Legal Restrictions</h3>
+
+                <p>
+                    India's Prohibition of Electronic Cigarettes Act,
+                    2019 establishes restrict the
+                    production, import, distribution and
+                    advertis of electronic cigarettes.
+                </p>
+
+                <div class="vapor-safety-highlight">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>
+                        Know the applicable laws and restrictions.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 02 -->
+        <div class="vapor-safety-row vapor-safety-row-reverse">
+
+            <div class="vapor-safety-image">
+                <img src="images/health-safety.jpg"
+                     alt="Health awareness">
+            </div>
+
+            <div class="vapor-safety-content">
+
+                <span class="vapor-safety-number">02</span>
+
+                <span class="vapor-safety-eyebrow">
+                    HEALTH AWARENESS
+                </span>
+
+                <h3>Understanding Potential Health Risks</h3>
+
+                <p>
+                    Nicotine is addictive, and electronic cigarette
+                    aerosol may contain substances that raise health
+                    concerns. Understanding these risks is important
+                    for public awareness.
+                </p>
+
+                <div class="vapor-safety-highlight">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>
+                        Health awareness matters for everyone.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 03 -->
+        <div class="vapor-safety-row">
+
+            <div class="vapor-safety-image">
+                <img src="images/environmental-awareness.jpg"
+                     alt="Environmental responsibility">
+            </div>
+
+            <div class="vapor-safety-content">
+
+                <span class="vapor-safety-number">03</span>
+
+                <span class="vapor-safety-eyebrow">
+                    ENVIRONMENTAL RESPONSIBILITY
+                </span>
+
+                <h3>Recognising Electronic Waste Concerns</h3>
+
+                <p>
+                    Electronic components and batteries can
+                    contribute to electronic waste. Improper
+                    disposal may create environmental concerns.
+                </p>
+
+                <div class="vapor-safety-highlight">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>
+                        Understand battery and electronic waste concerns.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="vapor-awareness-cta" id="vaporAwarenessCta">
+
+    <div class="vapor-awareness-cta-overlay"></div>
+
+    <div class="vapor-awareness-cta-container">
+
+        <div class="vapor-awareness-cta-content">
+
+            <span class="vapor-awareness-cta-eyebrow">
+                STAY INFORMED
+            </span>
+
+            <h2>
+                Knowledge Creates
+                <span>Awareness</span>
+            </h2>
+
+            <p>
+                Understanding legal restrictions, potential health
+                concerns, and environmental responsibilities is
+                essential. Explore reliable information and stay
+                informed about electronic cigarette regulations.
+            </p>
+
+            <a href="https://www.indiacode.nic.in/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="vapor-awareness-cta-btn">
+
+                Explore Legal Information
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+<!-- ==========================================
+     VAPOR FOOTER START
+========================================== -->
+
+<footer class="vapor-footer" id="vaporFooter">
+
+    <div class="vapor-footer-container">
+
+        <!-- FOOTER MAIN CONTENT -->
+        <div class="vapor-footer-main">
+
+            <!-- BRAND -->
+            <div class="vapor-footer-brand">
+
+                <a href="index.html" class="vapor-footer-logo">
+
+                    <img src="images/logo-light.png"
+                         class="vapor-footer-logo-light"
+                         alt="VAPOR Logo">
+
+                    <img src="images/logo.png"
+                         class="vapor-footer-logo-dark"
+                         alt="VAPOR Logo">
+
+                </a>
+
+                <p class="vapor-footer-description">
+                    Discover a modern vaping experience with
+                    thoughtfully curated devices, premium
+                    e-liquids and essential accessories.
+                </p>
+
+                <!-- SOCIAL LINKS -->
+                <div class="vapor-footer-social">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+            <div class="vapor-footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home 1</a>
+                    </li>
+
+                    <li>
+                        <a href="home-2.html">Home 2</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SHOP CATEGORIES -->
+            <div class="vapor-footer-column">
+
+                <h3>Shop Categories</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="products.html#devices">
+                            Vape Devices
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html#eliquids">
+                            E-Liquids
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html#accessories">
+                            Accessories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="collections.html">
+                            All Collections
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CUSTOMER SUPPORT -->
+            <div class="vapor-footer-column">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Support
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="age-verification.html">
+                            Age Verification
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- AGE RESTRICTION NOTICE -->
+        <div class="vapor-footer-age-notice">
+
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <p>
+                Age-restricted products. Purchases and access
+                are limited to individuals who meet the
+                applicable legal age requirements in their region.
+            </p>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+        <div class="vapor-footer-bottom">
+
+            <p>
+                &copy; 2026 VAPOR. All Rights Reserved.
+            </p>
+
+            <div class="vapor-footer-bottom-links">
+
+                <a href="privacy-policy.html">
+                    Privacy
+                </a>
+
+                <a href="terms.html">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ==========================================
+     VAPOR FOOTER END
+========================================== -->
+
+<!-- SCROLL TO TOP BUTTON -->
+<button class="vapor-scroll-top"
+        id="vaporScrollTop"
+        type="button"
+        aria-label="Scroll to top"
+        title="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <!-- COMMON THEME SCRIPT -->
+
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>
