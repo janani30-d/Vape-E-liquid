@@ -18966,3 +18966,542 @@ html[dir="rtl"] .vapor-health-resource-content {
     }
 
 }
+
+/* ==========================================
+   RTL - INGREDIENT AWARENESS CAPTION
+========================================== */
+
+html[dir="rtl"] .vapor-liquid-visual-caption {
+    direction: rtl !important;
+    flex-direction: row-reverse !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .vapor-liquid-visual-caption > div {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .vapor-liquid-caption-number {
+    order: 2 !important;
+    margin-left: 0 !important;
+    margin-right: 15px !important;
+}
+
+/* RTL - MOVE NUMBER TO RIGHT */
+
+html[dir="rtl"] .vapor-liquid-visual-caption {
+    flex-direction: row !important;
+    direction: rtl !important;
+    justify-content: space-between !important;
+}
+
+html[dir="rtl"] .vapor-liquid-caption-number {
+    order: -1 !important;
+    margin: 0 15px 0 0 !important;
+}
+
+html[dir="rtl"] .vapor-liquid-visual-caption > div {
+    text-align: right !important;
+}
+
+/* AGE HERO - RTL BREADCRUMB RIGHT ALIGNMENT */
+
+html[dir="rtl"] .vapor-age-breadcrumb {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    direction: rtl !important;
+    text-align: right !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] .vapor-age-breadcrumb i {
+    transform: rotate(180deg) !important;
+}
+
+/* AGE HERO RTL BREADCRUMB FIX */
+
+html[dir="rtl"] .vapor-age-hero-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    position: relative !important;
+}
+
+html[dir="rtl"] .vapor-age-breadcrumb {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+
+    align-self: flex-end !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
+    width: fit-content !important;
+    margin: 0 0 25px auto !important;
+    direction: rtl !important;
+    text-align: right !important;
+    z-index: 5 !important;
+}
+
+html[dir="rtl"] .vapor-age-hero-content {
+    width: 100% !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    text-align: right !important;
+}
+
+/* Keep the same hero height */
+html[dir="rtl"] .vapor-age-hero {
+    height: auto !important;
+}
+
+/* HEALTH AEROSOL POINTS - RTL ALIGNMENT */
+
+html[dir="rtl"] .vapor-health-aerosol-points {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .vapor-health-aerosol-point {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    direction: rtl !important;
+    text-align: right !important;
+    gap: 12px !important;
+}
+
+html[dir="rtl"] .vapor-health-aerosol-point i {
+    order: 0 !important;
+    margin: 4px 0 0 8px !important;
+}
+
+html[dir="rtl"] .vapor-health-aerosol-point span {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* DATE INPUT - RTL CALENDAR ICON */
+
+html[dir="rtl"] .vapor-verification-field input[type="date"] {
+    direction: rtl !important;
+    text-align: right !important;
+    padding: 0 15px !important;
+}
+
+/* Remove incorrect absolute positioning */
+html[dir="rtl"] .vapor-verification-field input[type="date"]::-webkit-calendar-picker-indicator {
+    position: static !important;
+    float: left !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+/* Date text alignment */
+html[dir="rtl"] .vapor-verification-field input[type="date"]::-webkit-datetime-edit {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+/* DATE INPUT - RTL CALENDAR ICON LEFT */
+
+html[dir="rtl"] #vaporDateOfBirth {
+    position: relative !important;
+    direction: rtl !important;
+    text-align: right !important;
+    padding-left: 45px !important;
+    padding-right: 15px !important;
+}
+
+html[dir="rtl"] #vaporDateOfBirth::-webkit-calendar-picker-indicator {
+    position: absolute !important;
+    left: 14px !important;
+    right: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+
+
+/* IPAD MINI - THIRD CARD IMAGE GAP */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .vapor-home2-resource-card:nth-child(3) {
+        transform: translateY(65px) !important;
+    }
+
+}
+
+
+
+/* RESPONSIVE HEADER ACTIONS ALIGNMENT */
+
+@media (max-width: 1199px) {
+
+    .vapor-header-actions {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        width: 100%;
+        gap: 10px;
+        direction: ltr;
+    }
+
+    /* RTL MODE */
+    html[dir="rtl"] .vapor-header-actions {
+        justify-content: flex-end !important;
+        direction: rtl;
+    }
+
+}
+/* MOBILE - THIRD CATEGORY IMAGE SPACING */
+
+@media (max-width: 767px) {
+
+    .vapor-category-accessories .vapor-category-image {
+        padding-top: 15px !important;
+        box-sizing: border-box;
+    }
+
+    .vapor-category-accessories .vapor-category-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+}
+/* MOBILE - THIRD CARD IMAGE BORDER GAP */
+
+@media (max-width: 767px) {
+
+    .vapor-category-accessories .vapor-category-image {
+        padding: 12px 15px !important;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vapor-category-accessories .vapor-category-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
+    }
+
+}
+
+
+/* MOBILE - NEWSLETTER ICON ALIGNMENT */
+
+@media (max-width: 767px) {
+
+    .vapor-newsletter-privacy {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 8px;
+        text-align: left;
+    }
+
+    .vapor-newsletter-privacy i {
+        flex-shrink: 0;
+        margin-top: 4px;
+        line-height: 1;
+    }
+
+    .vapor-newsletter-privacy p {
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .vapor-newsletter-notice {
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+
+    .vapor-newsletter-notice > i {
+        flex-shrink: 0;
+        margin-top: 4px;
+        line-height: 1;
+    }
+
+}
+
+/* NEWSLETTER PRIVACY ICON ALIGNMENT - ALL DEVICES */
+
+.vapor-newsletter-privacy {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.vapor-newsletter-privacy i {
+    flex: 0 0 16px;
+    width: 16px;
+    margin-top: 4px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.vapor-newsletter-notice {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px;
+}
+
+.vapor-newsletter-notice > i {
+    flex: 0 0 16px;
+    width: 16px;
+    margin-top: 4px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.vapor-newsletter-notice p {
+    flex: 1;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+
+/* ==========================================
+   HOME 2 ESSENTIALS - MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .vapor-home2-essentials {
+        padding: 55px 0;
+        overflow: hidden;
+    }
+
+    .vapor-home2-essentials-container {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* IMAGE */
+
+    .vapor-home2-essentials-visual {
+        width: 100%;
+        min-height: 260px;
+        height: 260px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    .vapor-home2-essentials-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .vapor-home2-essentials-image-overlay {
+        position: absolute;
+        inset: 0;
+    }
+
+    .vapor-home2-essentials-image-label {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    /* CONTENT */
+
+    .vapor-home2-essentials-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .vapor-home2-essentials-heading {
+        margin-bottom: 25px;
+    }
+
+    .vapor-home2-essentials-eyebrow {
+        font-size: 10px;
+    }
+
+    .vapor-home2-essentials-title {
+        font-size: 27px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .vapor-home2-essentials-description {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+
+    /* FEATURE ITEMS */
+
+    .vapor-home2-essentials-features {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .vapor-home2-essentials-feature {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .vapor-home2-essentials-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 10px;
+    }
+
+    .vapor-home2-essentials-feature h3 {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 7px;
+    }
+
+    .vapor-home2-essentials-feature p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* INFORMATION BARS */
+
+    .vapor-home2-essentials-details {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .vapor-home2-essentials-detail {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .vapor-home2-essentials-detail-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .vapor-home2-essentials-detail-line {
+        width: 100%;
+        margin-top: 9px;
+    }
+
+    /* BUTTON */
+
+    .vapor-home2-essentials-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 46px;
+        padding: 0 20px;
+        margin-top: 12px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+
+    /* RTL */
+
+    html[dir="rtl"] .vapor-home2-essentials-image-label {
+        left: auto;
+        right: 15px;
+    }
+
+    html[dir="rtl"] .vapor-home2-essentials-detail-heading {
+        flex-direction: row-reverse;
+    }
+
+    html[dir="rtl"] .vapor-home2-essentials-button {
+        flex-direction: row-reverse;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .vapor-home2-essentials {
+        padding: 45px 0;
+    }
+
+    .vapor-home2-essentials-container {
+        padding: 0 16px;
+        gap: 25px;
+    }
+
+    .vapor-home2-essentials-visual {
+        height: 220px;
+        min-height: 220px;
+    }
+
+    .vapor-home2-essentials-title {
+        font-size: 24px;
+    }
+
+    .vapor-home2-essentials-description {
+        font-size: 13px;
+    }
+
+    .vapor-home2-essentials-features {
+        gap: 20px;
+    }
+
+    .vapor-home2-essentials-feature h3 {
+        font-size: 13px;
+    }
+
+    .vapor-home2-essentials-feature p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* EXTRA SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .vapor-home2-essentials-container {
+        padding: 0 13px;
+    }
+
+    .vapor-home2-essentials-title {
+        font-size: 22px;
+    }
+
+    .vapor-home2-essentials-visual {
+        height: 200px;
+        min-height: 200px;
+    }
+
+}
