@@ -1,7 +1,7 @@
 
 
 /* ==========================================
-   VAPOR - INDEPENDENT MENU TOGGLE
+   VAPOR - RESPONSIVE MENU TOGGLE
 ========================================== */
 
 (function () {
@@ -11,27 +11,52 @@
         const menuButton = document.getElementById("vaporMenuToggle");
         const navigation = document.getElementById("vaporNavigation");
 
-        if (!menuButton || !navigation) {
-            console.warn("VAPOR menu elements not found.");
-            return;
+        if (!menuButton || !navigation) return;
+
+        function closeMenu() {
+            navigation.classList.remove("active");
+            menuButton.classList.remove("active");
+
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
         }
 
-        menuButton.addEventListener("click", function (event) {
-
+        function toggleMenu(event) {
             event.preventDefault();
             event.stopPropagation();
 
-            const isOpen = navigation.classList.toggle("active");
+            const isOpen = navigation.classList.contains("active");
 
-            menuButton.classList.toggle("active", isOpen);
+            if (isOpen) {
+                closeMenu();
+            } else {
+                navigation.classList.add("active");
+                menuButton.classList.add("active");
 
-            menuButton.setAttribute(
-                "aria-expanded",
-                String(isOpen)
-            );
+                menuButton.setAttribute("aria-expanded", "true");
+                menuButton.setAttribute("aria-label", "Close navigation menu");
+            }
+        }
+
+        // Hamburger open / close
+        menuButton.addEventListener("click", toggleMenu);
+
+        // Close after selecting a normal navigation link
+        navigation.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                if (link.classList.contains("vapor-home-trigger")) {
+                    return;
+                }
+
+                closeMenu();
+
+            });
 
         });
 
+        // Close when clicking outside
         document.addEventListener("click", function (event) {
 
             if (
@@ -39,25 +64,25 @@
                 !navigation.contains(event.target) &&
                 !menuButton.contains(event.target)
             ) {
-
-                navigation.classList.remove("active");
-                menuButton.classList.remove("active");
-
-                menuButton.setAttribute("aria-expanded", "false");
-
+                closeMenu();
             }
 
         });
 
+        // Close using Escape
         document.addEventListener("keydown", function (event) {
 
             if (event.key === "Escape") {
+                closeMenu();
+            }
 
-                navigation.classList.remove("active");
-                menuButton.classList.remove("active");
+        });
 
-                menuButton.setAttribute("aria-expanded", "false");
+        // Close when switching to desktop
+        window.addEventListener("resize", function () {
 
+            if (window.innerWidth > 1199) {
+                closeMenu();
             }
 
         });
@@ -65,10 +90,7 @@
     }
 
     if (document.readyState === "loading") {
-        document.addEventListener(
-            "DOMContentLoaded",
-            initializeVaporMenu
-        );
+        document.addEventListener("DOMContentLoaded", initializeVaporMenu);
     } else {
         initializeVaporMenu();
     }

@@ -20382,3 +20382,403 @@ html[dir="rtl"] .vapor-scroll-top {
     right: auto;
     left: 30px;
 }
+
+/* ==========================================
+   VAPOR HEADER - FINAL OVERRIDE
+========================================== */
+
+.vapor-header-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 25px !important;
+}
+
+/* LOGO SIZE */
+.vapor-logo {
+    width: 185px !important;
+    height: 85px !important;
+    flex: 0 0 185px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    margin: 0 !important;
+}
+
+.vapor-logo img {
+    width: 185px !important;
+    height: 85px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+}
+
+/* NAVIGATION ALIGNMENT */
+.vapor-navigation {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+/* MENU ITEMS */
+.vapor-nav-list {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 28px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+/* HEADER ACTIONS */
+.vapor-header-actions {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+    flex-shrink: 0 !important;
+}
+
+/* RTL */
+html[dir="rtl"] .vapor-logo img {
+    object-position: right center !important;
+}
+
+html[dir="rtl"] .vapor-navigation {
+    direction: rtl !important;
+}
+
+/* DESKTOP ONLY */
+@media (min-width: 1200px) {
+
+    .vapor-menu-toggle {
+        display: none !important;
+    }
+
+    .vapor-navigation {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 1199px) {
+
+    .vapor-header-container {
+        gap: 12px !important;
+    }
+
+    .vapor-logo {
+        width: 155px !important;
+        height: 70px !important;
+        flex-basis: 155px !important;
+    }
+
+    .vapor-logo img {
+        width: 155px !important;
+        height: 70px !important;
+    }
+
+    .vapor-navigation {
+        margin: 0 !important;
+    }
+
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+    .vapor-logo {
+        width: 135px !important;
+        height: 65px !important;
+        flex-basis: 135px !important;
+    }
+
+    .vapor-logo img {
+        width: 135px !important;
+        height: 65px !important;
+    }
+
+}
+/* LOGO VERTICAL ALIGNMENT FIX */
+
+@media (min-width: 1200px) {
+
+    .vapor-logo {
+        transform: translateY(-6px) !important;
+    }
+
+    .vapor-logo img {
+        object-position: left center !important;
+    }
+
+}
+
+/* ==========================================
+   ABOUT FEATURES - REMOVE WHITE BOX
+========================================== */
+
+.vapor-about-features {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 25px 0 !important;
+}
+
+/* Remove individual feature backgrounds */
+.vapor-about-feature {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Keep icons and text visible */
+.vapor-about-feature i {
+    color: var(--vapor-primary);
+}
+
+.vapor-about-feature span {
+    color: var(--vapor-heading);
+}
+
+/* Dark mode */
+body.dark-mode .vapor-about-features,
+body.dark-mode .vapor-about-feature {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* BLOG CARD - REDUCE HEADING & PARAGRAPH GAP */
+
+.vapor-blog-details h3 {
+    margin-bottom: 10px !important;
+}
+
+.vapor-blog-details p {
+    margin-top: 0 !important;
+    margin-bottom: 18px !important;
+}
+/* MOVE BLOG PARAGRAPH UP */
+
+.vapor-blog-details h3 {
+    margin-bottom: 0 !important;
+}
+
+.vapor-blog-details p {
+    margin-top: -5px !important;
+    margin-bottom: 18px !important;
+}
+
+
+
+/* HOME 1 - ALL PARAGRAPH STYLES */
+
+main p {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+
+
+
+
+/* ==========================================
+   VAPOR CATEGORY BUTTON - OVERRIDE
+========================================== */
+
+.vapor-category-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+
+    min-width: 140px !important;
+    height: 56px !important;
+    padding: 0 24px !important;
+
+    background: #8053A8 !important;
+    color: #ffffff !important;
+
+    border: 1px solid #8053A8 !important;
+    border-radius: 7px !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+
+    transition: all 0.3s ease !important;
+}
+
+/* ARROW ICON */
+.vapor-category-btn i {
+    font-size: 16px !important;
+    transition: transform 0.3s ease !important;
+}
+
+/* HOVER */
+.vapor-category-btn:hover {
+    background: #6F4596 !important;
+    border-color: #6F4596 !important;
+    color: #ffffff !important;
+}
+
+.vapor-category-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* RTL */
+html[dir="rtl"] .vapor-category-btn:hover i {
+    transform: translateX(-4px);
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .vapor-category-btn {
+        min-width: 125px !important;
+        height: 46px !important;
+        padding: 0 18px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* CATEGORY BUTTON - TRANSPARENT OUTLINE */
+
+.vapor-category-btn {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 7px !important;
+    min-width: 140px !important;
+    height: 56px !important;
+    padding: 0 24px !important;
+}
+
+/* HOVER */
+.vapor-category-btn:hover {
+    background: #ffffff !important;
+    color: #8053A8 !important;
+    border-color: #ffffff !important;
+}
+
+.vapor-category-btn i {
+    transition: transform 0.3s ease;
+}
+
+.vapor-category-btn:hover i {
+    transform: translateX(4px);
+}
+
+html[dir="rtl"] .vapor-category-btn:hover i {
+    transform: translateX(-4px);
+}
+/* BUTTON SHAPE ONLY */
+.vapor-collection-featured-btn {
+    border-radius: 50px !important;
+}
+/* RECTANGULAR BUTTON SHAPE */
+.vapor-collection-featured-btn {
+    border-radius: 7px !important;
+}
+/* ==========================================
+   HOME 2 - RECTANGULAR BUTTON SHAPES
+========================================== */
+
+.vapor-home2-resources-button,
+.vapor-home2-essentials-button,
+.vapor-home2-knowledge-button {
+    border-radius: 7px !important;
+}
+
+/* FOOTER LOGO SIZE */
+
+.vapor-footer-logo img {
+    width: 190px !important;
+    height: 75px !important;
+    object-fit: contain !important;
+    display: block;
+}
+
+/* DARK MODE LOGO */
+.vapor-footer-logo .vapor-footer-logo-light {
+    display: block;
+}
+
+.vapor-footer-logo .vapor-footer-logo-dark {
+    display: none;
+}
+
+body.dark-mode .vapor-footer-logo .vapor-footer-logo-light {
+    display: none;
+}
+
+body.dark-mode .vapor-footer-logo .vapor-footer-logo-dark {
+    display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .vapor-footer-logo img {
+        width: 165px !important;
+        height: 65px !important;
+    }
+}
+
+/* CATEGORY BUTTON - REDUCE SIZE */
+
+.vapor-category-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+
+    padding: 12px 22px !important;
+    min-height: 46px !important;
+
+    font-size: 13px !important;
+    font-weight: 600 !important;
+
+    border-radius: 6px !important;
+    line-height: 1.2 !important;
+}
+
+.vapor-category-btn i {
+    font-size: 14px !important;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .vapor-category-btn {
+        padding: 10px 18px !important;
+        min-height: 42px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* CATEGORY BUTTON - REDUCE HEIGHT */
+
+.vapor-category-btn {
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 0 18px !important;
+
+    font-size: 12px !important;
+    line-height: 1 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    border-radius: 6px !important;
+}
+
+.vapor-category-btn i {
+    font-size: 12px !important;
+}
