@@ -20782,3 +20782,403 @@ body.dark-mode .vapor-footer-logo .vapor-footer-logo-dark {
 .vapor-category-btn i {
     font-size: 12px !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER ACTIONS - COMPACT HEIGHT */
+
+.vapor-header-actions {
+    display: flex;
+    align-items: center !important;
+    gap: 10px;
+}
+
+.vapor-header-actions .vapor-header-icon,
+.vapor-header-actions .vapor-login-btn {
+    height: 45px !important;
+    min-height: 45px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.vapor-header-actions .vapor-header-icon {
+    width: 45px !important;
+    flex-shrink: 0;
+}
+
+.vapor-header-actions .vapor-login-btn {
+    padding: 0 24px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   REVIEW CARDS - FULL IMAGE WHEN EXPANDED
+========================================== */
+
+/* Expanded card image */
+.vapor-home2-review-card.active .vapor-home2-review-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+}
+
+/* Keep image area properly aligned */
+.vapor-home2-review-card.active .vapor-home2-review-trigger {
+    overflow: hidden !important;
+    display: block !important;
+    background: #1a1520;
+}
+
+/* Normal cards */
+.vapor-home2-review-card:not(.active) .vapor-home2-review-image {
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT VISUAL IMAGE OVERRIDE */
+
+.vapor-home2-contact-visual {
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 28px !important;
+    min-height: 520px !important;
+    isolation: isolate;
+}
+
+.vapor-home2-contact-visual-bg {
+    position: absolute !important;
+    inset: 0 !important;
+
+    background-image:
+        linear-gradient(
+            135deg,
+            rgba(105, 62, 145, 0.20),
+            rgba(105, 62, 145, 0.50)
+        ),
+        url("../images/contact.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    border-radius: inherit !important;
+    transform: none !important;
+}
+
+/* Remove abstract circles */
+.vapor-home2-contact-orbit {
+    display: none !important;
+}
+
+/* Keep headset illustration */
+.vapor-home2-contact-illustration {
+    background: transparent !important;
+}
+
+/* Floating message cards */
+.vapor-home2-contact-message {
+    z-index: 5 !important;
+}
+
+/* Floating icons */
+.vapor-home2-contact-floating {
+    z-index: 5 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .vapor-home2-contact-visual {
+        min-height: 380px !important;
+    }
+}
+
+/* =========================================
+   CONTACT VISUAL - IMAGE OVERRIDE
+========================================= */
+
+.vapor-home2-contact-visual {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 520px !important;
+    overflow: hidden !important;
+    border-radius: 28px !important;
+    isolation: isolate;
+    background: #e9d9f5 !important;
+}
+
+/* Background image */
+.vapor-home2-contact-image {
+    position: absolute !important;
+    inset: 0 !important;
+
+    background-image: url("../images/contact.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    z-index: -2 !important;
+}
+
+/* Purple overlay */
+.vapor-home2-contact-image-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+
+    background: linear-gradient(
+        135deg,
+        rgba(105, 62, 145, 0.15),
+        rgba(105, 62, 145, 0.45)
+    ) !important;
+
+    z-index: -1 !important;
+}
+
+/* Message cards */
+.vapor-home2-contact-message {
+    position: absolute !important;
+    z-index: 5 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+
+    padding: 17px 22px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #49345b !important;
+
+    border-radius: 16px !important;
+    font-weight: 600 !important;
+
+    box-shadow: 0 12px 35px rgba(40, 20, 60, 0.15) !important;
+    backdrop-filter: blur(10px);
+}
+
+.vapor-home2-contact-message i {
+    color: #8052a8 !important;
+    font-size: 20px !important;
+}
+
+.vapor-message-one {
+    top: 25% !important;
+    right: 7% !important;
+}
+
+.vapor-message-two {
+    bottom: 25% !important;
+    left: 7% !important;
+}
+
+/* Floating icons */
+.vapor-home2-contact-floating {
+    position: absolute !important;
+    z-index: 5 !important;
+
+    width: 65px !important;
+    height: 65px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 18px !important;
+    background: #ffffff !important;
+    color: #8052a8 !important;
+
+    font-size: 24px !important;
+    box-shadow: 0 10px 30px rgba(40, 20, 60, 0.18) !important;
+}
+
+.vapor-contact-float-one {
+    top: 9% !important;
+    left: 9% !important;
+}
+
+.vapor-contact-float-two {
+    bottom: 9% !important;
+    right: 9% !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vapor-home2-contact-visual {
+        min-height: 380px !important;
+        border-radius: 20px !important;
+    }
+
+    .vapor-home2-contact-message {
+        padding: 12px 14px !important;
+        font-size: 12px !important;
+    }
+
+    .vapor-home2-contact-floating {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 19px !important;
+    }
+}
+/* Center align About - Our Commitment heading and description */
+.vapor-about-why-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vapor-about-why-title {
+    text-align: center;
+}
+
+.vapor-about-why-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   CENTER ALIGN ALL HERO SECTIONS
+========================================= */
+
+/* Center hero section content vertically */
+.vapor-about-hero,
+.vapor-age-hero,
+.vapor-contact-hero,
+.vapor-product-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center hero containers */
+.vapor-about-hero-container,
+.vapor-age-hero-container,
+.vapor-contact-hero-container,
+.vapor-product-hero-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Center all hero content */
+.vapor-about-hero-content,
+.vapor-age-hero-content,
+.vapor-contact-hero-content,
+.vapor-product-hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Center breadcrumbs */
+.vapor-age-breadcrumb,
+.vapor-contact-breadcrumb {
+    justify-content: center;
+    text-align: center;
+}
+
+/* Center hero buttons */
+.vapor-about-hero-btn,
+.vapor-age-hero-btn,
+.vapor-contact-hero-btn,
+.vapor-product-hero-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Center Contact Hero Note */
+.vapor-contact-hero-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center note icon and text */
+.vapor-contact-hero-note i {
+    flex-shrink: 0;
+}
+
+.vapor-contact-hero-note span {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#vaporContactHero .vapor-contact-hero-description,
+.vapor-about-hero-description,
+ .vapor-age-hero-description,
+ .vapor-product-hero-description{
+    display: block !important;
+    width: 100% !important;
+    max-width: 700px !important;
+    margin: 25px auto !important;
+    text-align: center !important;
+    float: none !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+}
