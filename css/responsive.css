@@ -19058,6 +19058,58 @@ html[dir="rtl"] .vapor-age-hero-content {
     text-align: right !important;
 }
 
+/* Keep non-home page heroes centered in RTL after the page-specific RTL rules. */
+html[dir="rtl"] .vapor-about-hero-container,
+html[dir="rtl"] .vapor-age-hero-container,
+html[dir="rtl"] .vapor-contact-hero-container,
+html[dir="rtl"] .vapor-product-hero-container {
+    align-items: center !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .vapor-about-hero-content,
+html[dir="rtl"] .vapor-age-hero-content,
+html[dir="rtl"] .vapor-contact-hero-content,
+html[dir="rtl"] .vapor-product-hero-content {
+    margin-inline: auto !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .vapor-age-breadcrumb,
+html[dir="rtl"] .vapor-contact-breadcrumb,
+html[dir="rtl"] .vapor-about-hero-breadcrumb,
+html[dir="rtl"] .vapor-product-hero-breadcrumb {
+    align-self: center !important;
+    justify-content: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .vapor-contact-hero-note {
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+/* The About commitment section is English content, so keep its text LTR
+   while centering it in RTL mode (prevents punctuation from jumping sides). */
+html[dir="rtl"] .vapor-about-why-header,
+html[dir="rtl"] .vapor-about-why-title,
+html[dir="rtl"] .vapor-about-why-description,
+html[dir="rtl"] .vapor-about-why-content-tile {
+    direction: ltr !important;
+    text-align: center !important;
+}
+
+html[dir="rtl"] .vapor-about-why-header,
+html[dir="rtl"] .vapor-about-why-description,
+html[dir="rtl"] .vapor-about-why-content-tile p {
+    margin-inline: auto !important;
+}
+
+html[dir="rtl"] .vapor-about-why-grid {
+    direction: ltr !important;
+}
+
 /* Keep the same hero height */
 html[dir="rtl"] .vapor-age-hero {
     height: auto !important;

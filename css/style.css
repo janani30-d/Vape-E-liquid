@@ -21182,3 +21182,34 @@ body.dark-mode .vapor-footer-logo .vapor-footer-logo-dark {
     left: auto !important;
     right: auto !important;
 }
+
+/* Center non-home hero content when RTL is enabled.
+   Home 1 (.vapor-hero) and Home 2 (.vapor-home2-hero) keep their layouts. */
+html[dir="rtl"] .vapor-about-hero,
+html[dir="rtl"] .vapor-age-hero,
+html[dir="rtl"] .vapor-contact-hero,
+html[dir="rtl"] .vapor-product-hero {
+    justify-content: center;
+    text-align: center;
+}
+
+html[dir="rtl"] .vapor-about-hero-container,
+html[dir="rtl"] .vapor-age-hero-container,
+html[dir="rtl"] .vapor-contact-hero-container,
+html[dir="rtl"] .vapor-product-hero-container {
+    align-items: center;
+    text-align: center;
+}
+
+html[dir="rtl"] .vapor-about-hero-content,
+html[dir="rtl"] .vapor-age-hero-content,
+html[dir="rtl"] .vapor-contact-hero-content,
+html[dir="rtl"] .vapor-product-hero-content {
+    margin-inline: auto;
+    text-align: center;
+}
+
+html[dir="rtl"] .vapor-age-breadcrumb,
+html[dir="rtl"] .vapor-contact-breadcrumb {
+    justify-content: center;
+}
